@@ -1,0 +1,41 @@
+body {
+  background-color: grey;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+  width: 200px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50%;
+  padding: 5px 0px;
+  /*margin 50% för att flytta till mitten*/
+}
+
+.box {
+  height: 175px;
+  width: 175px;
+  margin: 5px 0px;
+}
+
+.röd {
+  background-color: red;
+  border: 10px solid darkred;
+}
+
+.gul {
+  background-color: yellow;
+  border: 10px solid orange;
+}
+
+.grön {
+  background-color: green;
+  border: 10px solid darkgreen;
+}
