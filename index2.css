@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: black;
   width: 200px;
   height: 550px;
   display: flex;
@@ -27,21 +27,26 @@ body {
 
 .röd {
   background-color: red;
+  opacity: 30%;
   border: 10px solid darkred;
 }
 
 .gul {
   background-color: yellow;
+  opacity: 30%;
   border: 10px solid orange;
+}
+.bling2:hover {
+  background-color: aquamarine;
 }
 
 .grön {
   background-color: green;
+  opacity: 30%;
   border: 10px solid darkgreen;
 }
 
 .bling1 {
-  background-color: rgb(255, 123, 123);
   width: 100%;
   height: 50%;
   position: relative;
@@ -63,4 +68,62 @@ body {
   height: 50%;
   position: relative;
   top: 50%;
+}
+
+.aniröd {
+  animation-name: pulseröd;
+  animation-duration: 3s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.anigul {
+  animation-name: pulsegul;
+  animation-duration: 3s;
+  animation-delay: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.anigrön {
+  animation-name: pulsegrön;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pulseröd {
+  0% {
+    opacity: 30%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 30%;
+  }
+}
+@keyframes pulsegul {
+  0% {
+    opacity: 30%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 30%;
+  }
+}
+@keyframes pulsegrön {
+  0% {
+    opacity: 30%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 30%;
+  }
 }
